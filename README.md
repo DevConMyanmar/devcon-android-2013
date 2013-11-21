@@ -51,19 +51,14 @@ DevCon App has the following Library dependencies
 * [Actionbarsherlock][2]
 * [StickyListHeaders][3]
 * [ViewPagerIndicator][4]
-* [FacebookSDK][12]
 
 Clone it and import it to your IDE and follow the rest of the instructions at [Referencing a Library Project][5]
 
-
 You can create your own account and add your API keys at `res/values/api.xml`. See below "Important Notes"
-
 
 Important Notes
 ----------------
 I've omitted the xml file which stores the sensitive api keys. You have to create your own at `res\values\api.xml` with the following content.
-App is is your Facebook App id.
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +67,6 @@ App is is your Facebook App id.
     <!-- FILL UP YOUR API KEYS HERE -->
     <string name="mix_panel_api"> </string>
     <string name="crashlytics"> </string>
-    <string name="app_id"> </string>
 
 </resources>
 ```
@@ -116,4 +110,3 @@ License
  [9]: https://github.com/nostra13/Android-Universal-Image-Loader
  [10]: http://try.crashlytics.com/sdk-android/
  [11]: https://github.com/DevCon-Myanmar/DevCon-Android/tree/master/daily_builds
- [12]: https://developers.facebook.com/docs/android/
