@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Schedule -->
+    <string name="json_schedule">schedule</string>
+    <string name="json_schedule_id">schedule_id</string>
+    <string name="json_description">description</string>
+    <string name="json_title">title</string>
+    <string name="json_session_time">session_time</string>
+    <string name="json_speakers">speaker_ids</string>
+	<string name="json_speakers_name">speaker_names</string>
+    <string name="json_talktype">talktype</string>
+    <string name="json_id">id</string>
+
+    <!-- Speaker -->
+    <string name="json_speaker">speaker</string>
+    <string name="json_speaker_id">speaker_id</string>
+    <string name="json_speaker_name">speaker_name</string>
+    <string name="json_email">email</string>
+    <string name="json_biography">biography</string>
+    <string name="json_speaker_photo">speaker_photo</string>
+	<string name="json_schedule_ids">schedule_ids</string>
+
+</resources>

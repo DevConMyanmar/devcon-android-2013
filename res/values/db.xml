@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="db_name">devcon.db</string>
+
+    <!-- Talk -->
+    <string name="table_talk">talks</string>
+    <string name="tId">_id</string>
+    <string name="tTime">time</string>
+    <string name="tTitle">title</string>
+    <string name="tSpeaker">speaker</string>
+    <string name="tDesc">desc</string>
+    <string name="tFav">fav</string>
+
+    <!-- Speaker -->
+    <string name="table_speaker">speakers</string>
+    <string name="sID">_s_id</string>
+    <string name="sName">s_name</string>
+    <string name="sTitle">s_title</string>
+    <string name="sBio">s_bio</string>
+    <string name="sEmail">s_email</string>
+    <string name="sPhoto">s_photo</string>
+    <string name="sSID">s_sid</string>
+
+</resources>

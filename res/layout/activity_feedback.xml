@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/tvTalkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/talk_title"
+                android:textSize="18sp" />
+
+            <include
+                android:id="@+id/dvd"
+                layout="@layout/custom_divider" />
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/tvQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/q1_overallraing"
+             />
+
+            <RatingBar
+                android:id="@+id/ratingQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="2.25" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl2Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/not_awesome" />
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl1Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/awesome" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/dvd"
+                layout="@layout/custom_divider" />
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/tvQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/q2_useful"
+         />
+
+            <RatingBar
+                android:id="@+id/ratingQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="2.25" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl1Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/not_much" />
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl2Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/pretty_much" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/dvd"
+                layout="@layout/custom_divider" />
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/tvQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/q3_content"
+          />
+
+            <RatingBar
+                android:id="@+id/ratingQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="2.25" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl1Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/too_basic" />
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl2Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/too_advanced" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/dvd"
+                layout="@layout/custom_divider" />
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/tvQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/q4_speaker"
+           />
+
+            <RatingBar
+                android:id="@+id/ratingQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="2.25" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl1Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/poor" />
+
+                <org.devcon.android.ui.RobotoRegularTV
+                    android:id="@+id/lbl2Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/outstanding" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/dvd"
+                layout="@layout/custom_divider" />
+
+            <org.devcon.android.ui.RobotoRegularTV
+                android:id="@+id/anything"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/anything"
+                />
+
+            <EditText
+                android:id="@+id/edSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/tell_us"
+                android:inputType="text"
+                android:lines="8"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_red_selector"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

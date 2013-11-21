@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/fav_lv"
+        android:layout_width="match_parent"
+        android:dividerHeight="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white"
+        android:divider="@null"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/emp_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/fav_lv">
+
+        <org.devcon.android.ui.RobotoRegularTV
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="@string/no_fav"
+            android:textSize="20sp" />
+
+        <include
+            android:id="@+id/relative_atf"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            layout="@layout/add_to_fav"
+            android:focusable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="overall_rating">overall_rating</string>
+    <string name="useful">useful</string>
+    <string name="content">content</string>
+    <string name="speaker">speaker</string>
+    <string name="package_name">package_name</string>
+    <string name="version_name">version_name</string>
+    <string name="anything">anything</string>
+    <string name="current_time">current_time</string>
+    <string name="network_name">network_name</string>
+    <string name="phone_type">phone_type</string>
+    <string name="api">api</string>
+    <string name="model">model</string>
+    <string name="vendor">vendor</string>
+
+</resources>

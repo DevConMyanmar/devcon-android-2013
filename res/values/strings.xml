@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="app_name">DevCon2013</string>
+    <string name="about">About</string>
+    <string name="title">DevCon</string>
+    <string name="year">2013</string>
+    <string name="subtitle">DevCon 2013</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="t_time">09:00</string>
+    <string name="talk_date">Saturday</string>
+    <string name="talk_title">Advanced Concurrency in Go</string>
+    <string name="talk_speaker">Sameer Ajmani</string>
+    <string name="talk_place"> Room 205 </string>
+    <string name="talk_desc">Concurrency features in Go
+		People seemed fascinated by the concurrency features of Go when the language was first announced.\n
+		\tQuestions:\n
+			\t\t- Why is concurrency supported?\n
+			\t\t- What is concurrency, anyway?\n
+			\t\t- Where does the idea come from?\n
+			\t\t- What is it good for?\n
+			\t\t- How do I use it?
+    </string>
+    <string name="des">DESCRIPTION</string>
+    <string name="add_to_fav">Add to My Schedule</string>
+    <string name="rm_from_fav">Remove from My Schedule</string>
+    <string name="fav">★</string>
+    <string name="remove">X</string>
+
+    <!-- Setting Strings -->
+    <string name="noti_title">Setting Category A</string>
+    <string name="wifi_title">Setting Category B</string>
+    <string name="show_notification">Show Notification?</string>
+    <string name="connect_to_wifi">Connect to Wifi Automatically?</string>
+    <string name="notification">Notifications</string>
+    <string name="wifi">Wifi</string>
+
+    <!-- Dummy strings for Speaker -->
+    <string name="speaker_name">Rob Pike</string>
+    <string name="speaker_pic">Speaker pic</string>
+    <string name="speaker_description">Robert C. Pike (born 1956) is a Canadian software engineer and author.
+        He is best known for his work at Bell Labs, where he was a member of the Unix team and 
+        was involved in the creation of the Plan 9 from Bell Labs and Inferno operating systems, 
+        as well as the Limbo programming language.
+		He also co-developed the Blit graphical terminal for Unix; 
+		before that he wrote the first window system for Unix in 1981. 
+		Over the years Pike has written many text editors; 
+		sam and acme are the most well known and are still in active use and development.</string>
+    <string name="speaker_title">Chief Commander</string>
+    <string name="speaker_email">r@google.com</string>
+    <string name="related_talk">His Talks</string>
+    <string name="wrong">Something went wrong.</string>
+    <string name="no_fav">No Talks in your Schedule.</string>
+    <string name="no_fav_add_some">Add some Talks.</string>
+
+    <!-- Feedback -->
+    <string name="q1_overallraing"> Rate this session overall : </string>
+    <string name="awesome">Awesome</string>
+    <string name="not_awesome">Not so awesome</string>
+    <!-- Feedback End -->
+
+
+    <!-- Useful -->
+    <string name="q2_useful">Is this session useful for you : </string>
+    <string name="pretty_much">Pretty Much</string>
+    <string name="not_much">Not Much</string>
+    <!-- Useful End -->
+
+
+    <!-- Content -->
+    <string name="q3_content">Content is : </string>
+    <string name="too_advanced">Too Advanced</string>
+    <string name="too_basic">Too Basic </string>
+    <!-- Content End -->
+
+
+    <!-- Speaker -->
+    <string name="q4_speaker">Speaker is : </string>
+    <string name="poor">Poor</string>
+    <string name="outstanding">Outstanding</string>
+    <!-- Speaker End -->
+
+
+    <!-- Feedback -->
+    <string name="anything_to_say">Do you have anything else to say ?</string>
+    <string name="submit">Submit</string>
+    <string name="action_bar_share_with">Share with</string>
+    <string name="tell_us">Tell us whatever you want to say.</string>
+
+    <!-- Countdown -->
+    <string name="whats_on_countdown_title_0"><xliff:g id="remaining_time">%1$s</xliff:g>\nuntil DevCon</string>
+
+    <plurals name="whats_on_countdown_title">
+        <item quantity="one">
+            <xliff:g id="number_of_days">%1$s</xliff:g>
+            day,&#160;<xliff:g id="remaining_time">%2$s</xliff:g>\nuntil DevCon
+        </item>
+        <item quantity="other">
+            <xliff:g id="number_of_days">%1$s</xliff:g>
+            days,&#160;<xliff:g id="remaining_time">%2$s</xliff:g>\nuntil DevCon
+        </item>
+    </plurals>
+
+    <string name="thank_you">Thank! See you next year!</string>
+
+    <!-- About Dialog -->
+    <string name="about_body">
+<![CDATA[
+        <b>DevCon 2013</b><br></br>
+        Version %s<br><br>
+        Created by Folks at <a href="http://zwenex.com"> Zwenexsys</a>
+        and <a href="http://nexlabs.co">NexLabs</a>.<br>
+        It is <a href="https://github.com/DevCon-Myanmar/DevCon-Android">completely open source</a>.<br><br>
+        Made in sunny Yangon with L-O-V-E
+  ]]>
+    </string>
+    <string name="licenses">Open Source Licenses</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="na">N/A</string>
+    <string name="previous">Prev</string>
+    <string name="next">Next</string>
+
+</resources>

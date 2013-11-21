@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <org.devcon.android.ui.SquaredImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tvName"
+                android:contentDescription="@string/speaker_pic"
+                android:src="@drawable/head" />
+
+            <org.devcon.android.ui.RobotoCondensedTV
+                android:id="@+id/tvName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:ellipsize="none"
+                android:fontFamily="sans-serif-condensed"
+                android:singleLine="false"
+                android:text="@string/speaker_name"
+                android:textSize="20sp"
+                android:typeface="normal" />
+
+            <org.devcon.android.ui.RobotoLightTV
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:text="@string/speaker_title" />
+
+            <org.devcon.android.ui.RobotoLightTV
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:text="@string/speaker_email" />
+        </RelativeLayout>
+
+        <org.devcon.android.ui.RobotoLightTV
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ln"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/speaker_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvDesc"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <org.devcon.android.ui.RobotoCondensedTV
+            android:id="@+id/tvTalks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/related_talk" />
+
+        <include
+            android:id="@+id/sTalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTalks"
+            layout="@layout/row_talk" />
+    </RelativeLayout>
+
+</ScrollView>

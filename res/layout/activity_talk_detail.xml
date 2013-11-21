@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="center"
+    android:layout_marginRight="5dp"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <org.devcon.android.ui.RobotoLightTV
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="none"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="false"
+        android:text="@string/talk_title"
+        android:textSize="20sp"
+        android:typeface="normal" />
+
+    <org.devcon.android.ui.SquaredImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/speaker_pic"
+        android:focusable="false"
+        android:src="@drawable/social_person" />
+
+    <org.devcon.android.ui.RobotoLightTV
+        android:id="@+id/tv_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"
+        android:text="@string/talk_speaker"
+        android:textSize="18sp" />
+
+    <org.devcon.android.ui.RobotoLightTV
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_speaker"
+        android:layout_below="@+id/tv_speaker"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:background="@color/time"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:text="@string/t_time"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <org.devcon.android.ui.RobotoLightTV
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_time"
+        android:layout_below="@+id/tv_time"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:src="@drawable/ic_launcher"
+        android:text="@string/talk_place"
+        android:textSize="18sp" />
+
+    <include
+        android:id="@+id/relative_atf"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/tv_speaker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        layout="@layout/add_to_fav"
+        android:focusable="false" />
+
+    <org.devcon.android.ui.RobotoRegularTV
+        android:id="@+id/tvBrief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_atf"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:text="@string/des" />
+
+    <org.devcon.android.ui.RobotoLightTV
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBrief"
+        android:layout_below="@+id/tvBrief"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/talk_desc" />
+
+</RelativeLayout>

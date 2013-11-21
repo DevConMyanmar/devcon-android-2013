@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/atf"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/button_red_selector"
+    android:contentDescription="@string/add_to_fav"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/add_to_fav_icon"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/add" />
+
+    <org.devcon.android.ui.RobotoRegularTV
+        android:id="@+id/add_to_fav_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:tag="@+id/add_to_fav_tag"
+        android:text="@string/add_to_fav"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

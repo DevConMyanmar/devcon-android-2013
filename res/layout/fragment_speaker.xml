@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdgeLength="5dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:scrollbars="none">
+
+    <!-- THIS IS STUPID BUT IT WORKS -->
+    <RelativeLayout
+        android:id="@+id/useless_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/sticky_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="10dp"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollAlwaysVisible="true"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="5dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/sticky_list" />
+    </RelativeLayout>
+
+    <org.devcon.android.ui.RobotoRegularTV
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="gone"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerInParent="true"
+        android:text="@string/wrong"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/pg"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/emp_v"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+

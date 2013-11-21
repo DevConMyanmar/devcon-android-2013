@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feedback"
+        android:actionProviderClass="com.actionbarsherlock.view.ActionProvider"
+        android:icon="@drawable/abs__ic_menu_share_holo_light"
+        android:showAsAction="always"
+        android:title="@string/action_bar_share_with" />
+
+</menu>

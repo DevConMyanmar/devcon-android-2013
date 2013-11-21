@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <org.devcon.android.ui.RobotoCondensedBoldTV
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="10dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:text="@string/talk_title"
+                android:typeface="normal"
+                android:layout_marginTop="5dp"
+                android:textSize="25sp"
+                android:layout_alignParentRight="true" />
+
+            <org.devcon.android.ui.SquaredImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/speaker_pic"
+                android:src="@drawable/img_profile" />
+
+            <org.devcon.android.ui.RobotoMediumTV
+                android:id="@+id/tv_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:text="@string/talk_speaker"
+                android:textSize="18sp"
+                android:textColor="#545454"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1" />
+
+            <org.devcon.android.ui.RobotoLightTV
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_speaker"
+                android:layout_below="@+id/tv_speaker"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="@color/time"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/t_time"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <org.devcon.android.ui.RobotoLightTV
+                android:id="@+id/tv_date"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/b"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:text="@string/talk_date"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/tv_time"
+                android:layout_toRightOf="@+id/imageView1" />
+
+            <org.devcon.android.ui.RobotoLightTV
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/talk_place"
+                android:layout_marginTop="3dp"
+                android:background="@color/title_color"
+                android:textSize="18sp"
+                android:layout_below="@+id/tv_date"
+                android:layout_toRightOf="@+id/imageView1" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/relative_atf"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            layout="@layout/add_to_fav"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/my" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            layout="@layout/custom_divider"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/relative_atf"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/dvd" />
+
+
+        <org.devcon.android.ui.RobotoLightTV
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/talk_desc"
+            android:layout_below="@+id/dvd"
+            android:textSize="15sp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignRight="@+id/relative_atf"
+            android:layout_alignLeft="@+id/relative_atf" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            layout="@layout/custom_divider"
+            android:id="@+id/dvd2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</ScrollView>
+

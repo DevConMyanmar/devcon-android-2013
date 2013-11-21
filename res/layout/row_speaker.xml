@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <org.devcon.android.ui.RobotoCondensedTV
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:focusable="false"
+        android:textSize="18sp"
+        android:focusableInTouchMode="false"
+        android:text="@string/speaker_name" />
+
+    <org.devcon.android.ui.RobotoRegularTV
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_name"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:maxLines="3"
+        android:text="@string/speaker_email" />
+
+    <org.devcon.android.ui.SquaredImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/tSpeaker"
+        android:maxHeight="50dp"
+        android:minWidth="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/social_person" />
+
+</RelativeLayout>
