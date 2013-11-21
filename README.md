@@ -9,7 +9,12 @@ This is the Android Application inspired by Google IO 2013. This is a work in a 
 APK Download
 ------------
 
-This will be available on Play Store very soon. For the daily builds, you can find it [here][11] and download as a raw file.
+This is now available on Play Store. For the daily builds, you can find it [here][11] and download as a raw file.
+
+<a href="https://play.google.com/store/apps/details?id=org.devcon.android">
+<img alt="Get it on Google Play"
+  src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+</a>
 
 
 Developed By
